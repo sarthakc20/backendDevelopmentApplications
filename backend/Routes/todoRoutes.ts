@@ -5,7 +5,7 @@ const router: Router = Router();
 
 router.route('/addTodo').post(createTodo);
 
-router.route('/getTodo').get(getTodos);
+router.route('/getTodos').get(getTodos);
 
 router.route('/updateTodo/:id').put(updateTodo);
 
