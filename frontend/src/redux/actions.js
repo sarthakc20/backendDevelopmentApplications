@@ -43,7 +43,7 @@ export const getTodos = () => async (dispatch) => {
   try {
     dispatch({ type: GET_TODO_REQUEST });
 
-    const { data } = await axios.get(`/api/v1/getTodo`);
+    const { data } = await axios.get(`/api/v1/getTodos`);
 
     dispatch({ type: GET_TODO_SUCCESS, payload: data.todos });
   } catch (error) {
@@ -74,7 +74,7 @@ export const updateData = (id, todo) => async (dispatch) => {
 };
 
 // Delete a Row
-export const deleteRow = (id) => async (dispatch) => {
+export const deleteTodo = (id) => async (dispatch) => {
   try {
     dispatch({
       type: DELETE_TODO_REQUEST,

@@ -1,4 +1,21 @@
-import { CLEAR_ERRORS, CREATE_TODO_FAIL, CREATE_TODO_REQUEST, CREATE_TODO_RESET, CREATE_TODO_SUCCESS, DELETE_TODO_FAIL, DELETE_TODO_REQUEST, DELETE_TODO_RESET, DELETE_TODO_SUCCESS, GET_TODO_FAIL, GET_TODO_REQUEST, GET_TODO_SUCCESS, UPDATE_TODO_FAIL, UPDATE_TODO_REQUEST, UPDATE_TODO_RESET, UPDATE_TODO_SUCCESS } from "./constants";
+import {
+  CLEAR_ERRORS,
+  CREATE_TODO_FAIL,
+  CREATE_TODO_REQUEST,
+  CREATE_TODO_RESET,
+  CREATE_TODO_SUCCESS,
+  DELETE_TODO_FAIL,
+  DELETE_TODO_REQUEST,
+  DELETE_TODO_RESET,
+  DELETE_TODO_SUCCESS,
+  GET_TODO_FAIL,
+  GET_TODO_REQUEST,
+  GET_TODO_SUCCESS,
+  UPDATE_TODO_FAIL,
+  UPDATE_TODO_REQUEST,
+  UPDATE_TODO_RESET,
+  UPDATE_TODO_SUCCESS,
+} from "./constants";
 
 export const addTodoReducer = (state = { todo: {} }, action) => {
   switch (action.type) {
@@ -40,7 +57,7 @@ export const getTodoReducer = (state = { todos: [] }, action) => {
       return {
         ...state,
         loading: true,
-        todos: []
+        todos: [],
       };
     case GET_TODO_SUCCESS:
       return {
