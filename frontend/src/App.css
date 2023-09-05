@@ -1,0 +1,65 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #100e09;
+  color: #fff;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  background-color: #100e09;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid rgb(255, 255, 255);
+  margin: 5vmax;
+  color: #ffffff;
+}
+
+.myTodos {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  margin: 3vmax;
+  padding: 1vmax;
+  width: 80%;
+  text-align: left;
+  border-radius: 8px;
+  color: #100e09;
+}
+
+.myIcons {
+  padding-left: 0.5vmax;
+  font-size: 1.2vmax;
+}
+
+.myIcons:hover {
+  color: rgba(109, 109, 109, 0.745);
+}
+
+.todoInput {
+  padding: 0.7vmax 1.1vmax;
+  text-decoration: none;
+  font-size: 1vmax;
+  border: none;
+}
+
+.todobtn {
+  font-size: 0.9vmax;
+  padding: 0.7vmax 1.1vmax;
+  cursor: pointer;
+  border: none;
+}
+
+.todobtn:hover {
+  background-color: #c1c1c1;
+}
+
+

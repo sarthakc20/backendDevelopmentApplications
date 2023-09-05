@@ -15,7 +15,7 @@ export const createTodo = async (req: Request, res: Response): Promise<void> => 
   }
 };
 
-// Get all Todos
+// Get Todos
 export const getTodos = async (req: Request, res: Response): Promise<void> => {
   try {
     const todos: ITodo[] = await Todo.find();
